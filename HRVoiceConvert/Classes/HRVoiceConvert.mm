@@ -9,7 +9,7 @@
 #import "HRVoiceConvert.h"
 
 #include "interf_dec.h"
-#include "interf_enc.h
+#include "interf_enc.h"
 
 #define PCM_FRAME_SIZE 320
 
