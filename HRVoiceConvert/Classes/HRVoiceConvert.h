@@ -14,21 +14,35 @@
 @interface HRVoiceConvert : NSObject
 
 /**
- Amr 转 Wav
+ amr转wav文件
 
- @param amrPath <#amrPath description#>
- @param savePath <#savePath description#>
- @return <#return value description#>
+ @param amrData amr数据
+ @return wav数据
  */
-+ (BOOL)amrToWav:(NSString *)amrPath wavSavePath:(NSString *)savePath;
++ (NSData *)convertAmrToWavFile:(NSData *)amrData;
 
 /**
- Wav 转 Amr
+ wav转amr文件
 
- @param wavPath <#wavPath description#>
- @param savePath <#savePath description#>
- @return <#return value description#>
+ @param wavData wav数据
+ @return amr数据
  */
-+ (BOOL)wavToAmr:(NSString *)wavPath amrSavePath:(NSString *)savePath;
++ (NSData *)convertWavToAmrFile:(NSData *)wavData;
+
+/**
+ amr转wav
+
+ @param amrData amr数据
+ @return wav数据
+ */
++ (NSData *)convertAmrToWav:(NSData *)amrData;
+
+/**
+ wav转amr
+
+ @param wavData wav数据
+ @return amr数据
+ */
++ (NSData *)convertWavToAmr:(NSData *)wavData;
 
 @end
