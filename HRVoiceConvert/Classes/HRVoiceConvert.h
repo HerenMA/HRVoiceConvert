@@ -9,40 +9,31 @@
 #import <Foundation/Foundation.h>
 
 /**
- Wav、Amr 互转
+ 声音转换
  */
 @interface HRVoiceConvert : NSObject
 
 /**
- amr转wav文件
+ 单例
 
- @param amrData amr数据
- @return wav数据
+ @return <#return value description#>
  */
-+ (NSData *)convertAmrToWavFile:(NSData *)amrData;
++ (instancetype)shareInstance;
 
 /**
- wav转amr文件
+ amr格式转wav
 
- @param wavData wav数据
- @return amr数据
+ @param amrData <#amrData description#>
+ @return <#return value description#>
  */
-+ (NSData *)convertWavToAmrFile:(NSData *)wavData;
+- (NSData *)amrToWav:(NSData *)amrData;
 
 /**
- amr转wav
+ wav格式转Amr
 
- @param amrData amr数据
- @return wav数据
+ @param wavData <#wavData description#>
+ @return <#return value description#>
  */
-+ (NSData *)convertAmrToWav:(NSData *)amrData;
-
-/**
- wav转amr
-
- @param wavData wav数据
- @return amr数据
- */
-+ (NSData *)convertWavToAmr:(NSData *)wavData;
+- (NSData *)wavToAmr:(NSData *)wavData;
 
 @end
