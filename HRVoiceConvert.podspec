@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
 
     s.source_files = "HRVoiceConvert/**/*.{h,m}"
     s.vendored_libraries = "HRVoiceConvert/**/*.a"
-    s.public_header_files = "HRVoiceConvert/Classes/HRVoiceConvert.h"
+    s.public_header_files = "HRVoiceConvert/HRVoiceConvert.h"
 end
