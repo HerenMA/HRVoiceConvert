@@ -1,0 +1,6 @@
+framework module HRVoiceConvert {
+  umbrella header "HRVoiceConvert.h"
+
+  export *
+  module * { export * }
+}
